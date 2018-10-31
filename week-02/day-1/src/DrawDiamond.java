@@ -16,19 +16,26 @@ public class DrawDiamond {
         //
         // The diamond should have as many lines as the number was
 
-        System.out.println("Please, give me a number: ");
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
+        System.out.println("Enter a number");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
 
-        for (int i = -n; i <= n; i++) {
-            for (int j = -n; j <= n; j++) {
-                if (i + j <= n) {
-                    System.out.print("* ");
-                } else {
-                    System.out.print(" ");
-                }
-                System.out.println();
+        int count=1;
+        for(int i=1;i<=2*n-1;i++)
+        {
+            for(int j=count;j<=n;j++)
+            {
+                System.out.print("  ");
             }
+            for(int k=1;k<=count*2-1;k++)
+            {
+                System.out.print("* ");
+            }
+            if(i<n)
+                count++;
+            else
+                count--;
+            System.out.println("");
         }
     }
 }
