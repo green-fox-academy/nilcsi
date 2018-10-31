@@ -10,7 +10,7 @@ public class ParametricAverage {
         // Sum: 22, Average: 4.4
 
         int sum = 0;
-        int average = 0;
+        double average = 0.0;
 
         for(int i=0; i<5; i++) {
             System.out.println("Please, give me a number: ");

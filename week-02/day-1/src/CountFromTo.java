@@ -29,7 +29,7 @@ public class CountFromTo {
         }else {
             for(int i = a; i < b; i++)
             {
-                System.out.println(i);
+                System.out.print(i + " ");
             }
         }
 

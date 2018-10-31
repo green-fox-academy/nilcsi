@@ -8,7 +8,7 @@ public class SecondsInADay {
         // day if the current time is represented by the variables
 
         int dailyHours = 24;
-        int minutes= dailyHours*60;
+        int minutes = dailyHours*60;
         int dailySeconds = minutes *60;
 
         int current = 42 + (34*60) + (14*60)*60;

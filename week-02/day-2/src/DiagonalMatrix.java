@@ -12,13 +12,15 @@ public class DiagonalMatrix {
     // - Print this two dimensional array to the output
     public static void main(String args[]) {
 
-        int size = 4;
-        int[][] myArray = new int[size][size];
+        int[][] myArray = new int[4][4];
 
-        for(int i = 0; i< size; i++) {
-            for(int j = 0; j < size; j++) {
-                System.out.println(Arrays.deepToString(myArray));
-            }
+        for(int i = 0; i< myArray.length; i++) {
+            for(int j = 0; j < myArray[i].length; j++) {
+                if(i==j) {
+                    myArray[i][j] = 1;
+                }
+                System.out.print(myArray[i][j]);
+            }System.out.println(" ");
         }
 
     }

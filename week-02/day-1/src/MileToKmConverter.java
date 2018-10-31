@@ -13,6 +13,6 @@ public class MileToKmConverter {
 
        double oneMile = userInput * 0.62;
 
-        System.out.println(oneMile);
+        System.out.println(oneMile + " miles");
     }
 }

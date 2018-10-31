@@ -10,7 +10,7 @@ public class ConditionalVariableMutation {
 
         System.out.println(out);
 
-     /*   int b = 13;
+       /* int b = 13;
         String out2 = "";
         // if b is between 10 and 20 set out2 to "Sweet!"
         // if less than 10 set out2 to "Less!",
@@ -35,7 +35,7 @@ public class ConditionalVariableMutation {
         // and isBonus is false decrement c by 1
         // if isBonus is true c should remain the same
 
-        if (credits >= 50 && isBonus = false)
+        if (credits > 50 && isBonus = false)
         {
             int x = c - 2;
             int c = x;
@@ -48,7 +48,7 @@ public class ConditionalVariableMutation {
         }
         System.out.println(c);
 
-       /* int d = 8;
+       int d = 8;
         int time = 120;
         String out3 = "";
         // if d is dividable by 4

@@ -12,9 +12,9 @@ public class OddEven {
 
         if((number%2) == 0)
         {
-            System.out.println("Odd");
-        }else {
             System.out.println("Even");
+        }else {
+            System.out.println("Odd");
         }
 
     }
