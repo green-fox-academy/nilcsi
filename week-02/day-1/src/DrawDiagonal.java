@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class DrawDiagonal {
-    public static void main(String[] args) {
         // Write a program that reads a number from the standard input, then draws a
         // square like this:
         //
@@ -14,15 +13,34 @@ public class DrawDiagonal {
         //
         // The square should have as many lines as the number was
 
-        System.out.println("Please, give me a number: ");
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
+        public static void pattern ( int n) {
+            // Loop denoting rows
+            for (int i = 0; i < n; i++) {
 
-        System.out.println("%%%%%%");
+                // Loop denoting columns
+                for (int j = 0; j < n; j++) {
 
-        for(int i=0;i<n-2;i++) {
-            System.out.println("%    %");
+                    // Checking boundary conditions
+                    // and main diagonal and
+                    // secondary diagonal conditions
+                    if (i == 0 || j == 0 || i == j
+                            || i == n - 1 || j == n - 1
+                            || i + j == n - 1)
+                        System.out.print("*");
+                    else
+                        System.out.print(" ");
+                }
+                System.out.println();
+            }
         }
-        System.out.println("%%%%%%");
-    }
+
+        // Driver function
+        public static void main (String argc[]){
+
+            // n denotes size which should be odd
+            int n = 7;
+
+            // Function calling
+            pattern(n);
+        }
 }

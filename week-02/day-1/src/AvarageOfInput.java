@@ -11,12 +11,12 @@ public class AvarageOfInput {
         int[] numbers = new int[5];
         int sum = 0;
 
-        for(int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {
             System.out.println("Please, give me a number: ");
             Scanner scanner = new Scanner(System.in);
             sum += scanner.nextInt();
         }
         System.out.println("Sum: " + sum);
-        System.out.println("Average: " + sum/numbers.length);
+        System.out.println("Average: " + sum / numbers.length);
     }
 }
