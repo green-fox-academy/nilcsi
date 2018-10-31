@@ -8,10 +8,22 @@ public class CompareLength {
     public static void main(String args[]) {
         int[] p1 = {1, 2, 3};
         int[] p2= {4, 5};
+        int p1_length = 0;
+        int p2_length = 0;
 
-        if(p2.length > p1.length){
-            System.out.println("p2 has more elements than p1");
+        for(int i=0; i<p1.length; i++){
+            p1_length += i;
         }
 
+        for(int j=0; j<p2.length; j++){
+            p2_length += j;
+        }
+
+        System.out.println(p1_length);
+        System.out.println(p2_length);
+
+        /*if(p2_length > p1_length){
+            System.out.println("p2 has more elements than p1");
+        }*/
     }
 }

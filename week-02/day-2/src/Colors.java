@@ -9,13 +9,13 @@ public class Colors {
     //   `"orchid", "violet", "pink", "hot pink"`
 
     public static void main(String args[]) {
-        String[] colors = new String[3];
-        colors[0] = "lime, forest green, olive, pale green, spring green";
-        colors[1] = "orange red, red, tomato";
-        colors[2] = "orchid, violet, pink, hot pink";
+        String[][] colors = new String[3][2];
+        colors[0][0] = "lime, forest green, olive, pale green, spring green";
+        colors[1][0] = "orange red, red, tomato";
+        colors[2][0] = "orchid, violet, pink, hot pink";
 
-        System.out.println(colors[0]);
-        System.out.println(colors[1]);
-        System.out.println(colors[2]);
+        System.out.println(colors[0][0]);
+        System.out.println(colors[1][0]);
+        System.out.println(colors[2][0]);
     }
 }

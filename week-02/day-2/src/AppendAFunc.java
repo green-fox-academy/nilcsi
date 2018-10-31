@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class AppendAFunc {
 
     //  Create the usual class wrapper
