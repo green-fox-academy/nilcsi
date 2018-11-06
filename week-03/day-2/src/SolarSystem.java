@@ -16,8 +16,6 @@ public class SolarSystem{
 
     public static ArrayList<String> putSaturn(ArrayList<String> planetList) {
 
-        //ArrayList<String> allPlanets = new ArrayList();
-       // planetList.add("Saturn");
         planetList.add(5, "Saturn");
 
         return planetList;
