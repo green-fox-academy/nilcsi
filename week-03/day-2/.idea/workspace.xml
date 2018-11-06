@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29de3015-f545-4e77-bd5a-f6667870863b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.gitignore_BACKUP_12836" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.gitignore_BASE_12836" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.gitignore_LOCAL_12836" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.gitignore_REMOTE_12836" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../git-lesson-repository" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../nilcsi.github.io/hatter.png" beforeDir="false" />
@@ -138,7 +142,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541502017585" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541502597736" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -191,12 +195,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541501073252</updated>
-      <workItem from="1541501076578" duration="932000" />
+      <workItem from="1541501076578" duration="1508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="932000" />
+    <option name="totallyTimeSpent" value="1508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
