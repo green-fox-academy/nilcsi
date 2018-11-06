@@ -11,13 +11,14 @@ public class SolarSystem{
         // Create a method called putSaturn() which has list parameter and returns the correct list.
 
         System.out.println(putSaturn(planetList));
-        // Expected output: "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Uranus", "Neptune", "Saturn"
+        // Expected output: "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"
     }
 
     public static ArrayList<String> putSaturn(ArrayList<String> planetList) {
 
         //ArrayList<String> allPlanets = new ArrayList();
-        planetList.add("Saturn");
+       // planetList.add("Saturn");
+        planetList.add(5, "Saturn");
 
         return planetList;
     }

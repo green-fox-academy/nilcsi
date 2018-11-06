@@ -11,7 +11,8 @@ public class UrlFixer {
 
         String rightUrl = url.replace("bots", "odds");
         String rrrightUrl = new StringBuffer(rightUrl).insert(5, ":").toString();
+        url = rrrightUrl;
 
-        System.out.println(rrrightUrl);
+        System.out.println(url);
     }
 }

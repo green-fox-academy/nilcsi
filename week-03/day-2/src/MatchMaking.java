@@ -2,7 +2,7 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 public class MatchMaking{
-   public static void main(String... args){
+ /*  public static void main(String... args){
         ArrayList<String> girls = new ArrayList<String>(Arrays.asList("Eve","Ashley","Claire","Kat","Jane"));
         ArrayList<String> boys = new ArrayList<String>(Arrays.asList("Joe","Fred","Tom","Todd","Neef","Jeff"));
 
@@ -13,7 +13,7 @@ public class MatchMaking{
     }
 
     public static String makingMatches(ArrayList<String> girls, ArrayList<String> boys) {
-       
 
-   }
+
+   }*/
 }
