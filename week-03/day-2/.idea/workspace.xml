@@ -140,7 +140,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541502957300" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541503055973" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -154,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TakesLonger">
+  <component name="RunManager" selected="Application.ToDoPrint">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="day-2" />
@@ -172,6 +172,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ToDoPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ToDoPrint" />
+      <module name="day-2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TodoPrint" />
+      <module name="day-2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UrlFixer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UrlFixer" />
       <module name="day-2" />
@@ -183,9 +197,13 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.UrlFixer" />
       <item itemvalue="Application.TakesLonger" />
+      <item itemvalue="Application.TodoPrint" />
+      <item itemvalue="Application.ToDoPrint" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ToDoPrint" />
+        <item itemvalue="Application.TodoPrint" />
         <item itemvalue="Application.TakesLonger" />
         <item itemvalue="Application.UrlFixer" />
         <item itemvalue="Application.Main" />
