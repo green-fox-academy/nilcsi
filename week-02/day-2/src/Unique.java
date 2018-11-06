@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class Unique {
 
     public static void main(String[] args) {
-        int[] arr = {1, 11, 34, 11, 52, 61, 1, 34, 52, 11};
+        int[] arr = {1, 11, 34, 11, 52, 61, 1, 34};
         Arrays.sort(arr);
         findUnique(arr);
     }
@@ -27,6 +27,7 @@ public class Unique {
             if (!isUnique) {
                 System.out.print(a[i] + " ");
             }
+
         }
     }
 }
