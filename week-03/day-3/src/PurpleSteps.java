@@ -13,7 +13,7 @@ public class PurpleSteps {
         int offset = 20;
 
         graphics.setColor(new Color(138,43,226));
-        for (var i = 0; i < 10; i = i + 1) {
+        for (int i = 0; i < 10; i = i + 1) {
             graphics.fillRect(offset, offset, size, size);
             offset = offset + size;
         }
