@@ -14,7 +14,7 @@ public class PurpleSteps3d {
 
         for (int i = 0; i < 8; i++) {
             graphics.setColor(new Color(138,43,226));
-            graphics.fillRect(size, size, width, width);
+            graphics.fill3DRect(size, size, width, width, true);
             size += width;
             width += 10;
         }
