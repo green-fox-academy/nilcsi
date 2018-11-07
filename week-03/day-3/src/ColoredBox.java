@@ -4,11 +4,15 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class LineInTheMiddle {
-    public static void mainDraw(Graphics graphics){
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
-        graphics.drawLine(0,HEIGHT/2, WIDTH, 160);
+public class ColoredBox {
+    public static void mainDraw(Graphics graphics) {
+        // Draw a box that has different colored lines on each edge.
+
+        graphics.setColor(Color.GREEN);
+        int[] xPoints = {10, 110, 110, 10};
+        int[] yPoints = {10, 10, 110, 110};
+        graphics.drawPolygon(xPoints, yPoints, 4);
+
     }
 
     // Don't touch the code below
