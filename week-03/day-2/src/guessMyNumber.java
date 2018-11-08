@@ -6,7 +6,9 @@ public class guessMyNumber {
     public static void main(String... args) {
 
         int number = (int) (Math.random() * 101);
+        System.out.println(number);
         System.out.println("I've the number between 1-100. You have 5 lives.");
+        System.out.println("Please, give me your guess: ");
         Scanner userInput = new Scanner(System.in);
         int guess = userInput.nextInt();
         int lives = 5;
@@ -19,7 +21,7 @@ public class guessMyNumber {
             }
             guess = userInput.nextInt();
         }
-        if(lives > 1){
+        if(lives > 0 && guess == number){
                 System.out.println("Congratulations. You won!");
             } else {
             System.out.println("You're dead!");
