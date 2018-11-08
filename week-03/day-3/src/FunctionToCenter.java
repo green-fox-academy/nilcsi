@@ -6,7 +6,7 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 public class FunctionToCenter {
 
-    public static final int canvasSize = 300;
+    public static final int canvasSize = 500;
     public static final int canvasStart = 0;
 
     public static void mainDraw(Graphics graphics) {

@@ -20,6 +20,7 @@ public class CenterBoxFunction {
     }
 
     public static void drawSquare(int size, Graphics g){
+
         g.drawRect(WIDTH/2 - size/2, HEIGHT/2 - size/2, size, size);
     }
 

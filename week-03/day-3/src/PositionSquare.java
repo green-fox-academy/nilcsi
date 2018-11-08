@@ -21,6 +21,7 @@ public class PositionSquare {
     }
 
     public static void drawSquare(Graphics graphics, int x, int y){
+
         graphics.drawRect(x, y, 50, 50);
     }
 

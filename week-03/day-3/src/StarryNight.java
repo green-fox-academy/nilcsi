@@ -18,8 +18,8 @@ public class StarryNight {
             int shadesOfGrey = (int) (Math.random()*256);
             graphics.setColor(new Color(shadesOfGrey, shadesOfGrey, shadesOfGrey));
 
-            int a = 5 + ((int)(Math.random() * WIDTH));
-            int b = 5 + ((int)(Math.random() * HEIGHT));
+            int a = (int)(Math.random() * WIDTH);
+            int b = (int)(Math.random() * HEIGHT);
             graphics.drawRect(a, b, 5 ,5);
         }
     }
