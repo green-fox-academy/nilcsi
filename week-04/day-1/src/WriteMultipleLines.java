@@ -26,14 +26,12 @@ public class WriteMultipleLines {
 
     public static void writeFile(String name, String theWord, int numOfLines) {
         List<String> content = new ArrayList();
-        content.add(theWord);
-
+        for(int i = 0; i < numOfLines; i++) {
+            content.add(theWord);
+        }
+        Path file = Paths.get(name);
         try {
-            Path file = Paths.get(name);
             Files.write(file, content);
-            for(int i = 0; i < numOfLines; i++) {
-                System.out.println(theWord);
-            }
         } catch (IOException e) {
             System.out.println("Crashed");
         }
