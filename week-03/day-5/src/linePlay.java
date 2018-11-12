@@ -8,15 +8,14 @@ public class linePlay {
 
     public static void mainDraw(Graphics graphics){
 
-        int num = 15;
+        graphics.setColor(Color.GREEN);
 
-        for (int i = 0; i < num; i++) {
-            int x = i * WIDTH / (num - 1);
-            int y = i * HEIGHT / (num - 1);
-            graphics.setColor(Color.GREEN);
-            graphics.drawLine(0, y, x, HEIGHT);
-            graphics.setColor(new Color (138,43,226));
-            graphics.drawLine(x, 0, WIDTH, y);
+        for (int i = WIDTH/15; i < WIDTH - WIDTH/15; i += WIDTH / 15) {
+            graphics.drawLine(i, HEIGHT, 0, HEIGHT - WIDTH + i);
+        }
+        graphics.setColor(Color.MAGENTA);
+        for (int i = WIDTH - WIDTH/15; i > WIDTH/15; i -= WIDTH / 15) {
+            graphics.drawLine(i, 0, WIDTH, HEIGHT - WIDTH + i);
         }
     }
 

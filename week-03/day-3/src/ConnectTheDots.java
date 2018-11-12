@@ -14,7 +14,7 @@ public class ConnectTheDots {
         // {120, 100}, {85, 130}, {50, 100}}
 
 
-        int[][] boxParameters = {{10, 10}, {290,  10}, {290, 290}, {10, 290},{10, 10}};
+        int[][] boxParameters = {{10, 10},{290,  10}, {290, 290}, {10, 290},{10, 10}};
         int[][] shapeParameters = {{50, 100}, {70, 70}, {80, 90}, {90, 90}, {100, 70}, {120, 100}, {85, 130}, {50, 100}};
 
         connectDots(graphics, boxParameters);

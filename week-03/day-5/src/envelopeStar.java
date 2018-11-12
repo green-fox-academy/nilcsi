@@ -8,7 +8,7 @@ public class envelopeStar {
 
     public static void mainDraw(Graphics graphics){
 
-        int num = 13;
+        int num = 10;
 
         for (int i = 0; i < num; i++) {
             graphics.setColor(Color.GREEN);
