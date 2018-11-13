@@ -1,4 +1,4 @@
-package com.Animal;
+package com.Farm;
 
 public class Animal {
 
@@ -9,7 +9,7 @@ public class Animal {
 
     public int eat(){
 
-        return hunger --1;
+        return hunger --;
     }
 
     public int drink() {
