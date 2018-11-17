@@ -17,19 +17,22 @@ public class CountFromTo {
         // 4
         // 5
         System.out.println("Please, give me two numbers: ");
-        int a;
+        System.out.println("The first one is: ");
         Scanner scanner = new Scanner(System.in);
+        int a;
         a = scanner.nextInt();
-
+        System.out.println("And the second one is: ");
         int b;
         b = scanner.nextInt();
 
-        if(b<a){
+        if(b < a){
+
             System.out.println("The second number should be bigger");
         }else {
+            System.out.println("Count from " + a + " to " + b + ": ");
             for(int i = a; i < b; i++)
             {
-                System.out.print(i + " ");
+                System.out.println(i + " ");
             }
         }
 

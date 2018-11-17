@@ -14,7 +14,7 @@ public class Sum {
 
         int[] allNumbers = new int [param];
         int summation = 0;
-        for(int i = 0; i< param; i++) {
+        for(int i = 0; i < param; i++) {
             allNumbers[i] = i;
             summation += i;
         }

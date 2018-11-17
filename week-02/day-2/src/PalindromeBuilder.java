@@ -13,7 +13,7 @@ public class PalindromeBuilder {
         char[] in = userInput.toCharArray();
         System.out.print(userInput);
 
-        for (int i = in.length-1;i>=0;i--) {
+        for (int i = in.length-1; i >= 0; i--) {
             System.out.print(in[i]);
         }
     }

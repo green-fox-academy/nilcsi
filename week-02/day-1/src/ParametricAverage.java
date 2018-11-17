@@ -10,9 +10,9 @@ public class ParametricAverage {
         // Sum: 22, Average: 4.4
 
         int sum = 0;
-        double average = 0.0;
+        double average;
 
-        for(int i=0; i<5; i++) {
+        for(int i = 0; i < 5; i++) {
             System.out.println("Please, give me a number: ");
             Scanner scan = new Scanner(System.in);
             int number = scan.nextInt();

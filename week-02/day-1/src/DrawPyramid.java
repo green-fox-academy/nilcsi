@@ -19,14 +19,14 @@ public class DrawPyramid {
 
         for (int i = 0; i < n; i++) {
 
-           for (int k=0; k<n-i; k++) {
+           for (int k = 0; k < n - i; k++) {
                 System.out.print(" ");
             }
 
-            for (int j = 0; j < i + 1; j++) {
+           for (int j = 0; j < i + 1; j++) {
                 System.out.print("* ");
-            }
-            System.out.println("");
+           }
+           System.out.println("");
         }
     }
 }

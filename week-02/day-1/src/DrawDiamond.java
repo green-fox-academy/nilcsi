@@ -29,7 +29,7 @@ public class DrawDiamond {
             }
             for(int k=1;k<=count*2-1;k++)
             {
-                System.out.print("* ");
+                System.out.print("*");
             }
             if(i<n)
                 count++;

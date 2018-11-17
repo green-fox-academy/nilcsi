@@ -20,7 +20,7 @@ public class DrawSquare {
         int n = scan.nextInt();
 
         System.out.println("%%%%%%");
-        for(int i=0;i<n-2;i++) {
+        for(int i = 0; i < n - 2; i++) {
             System.out.println("%    %");
         }
         System.out.println("%%%%%%");
