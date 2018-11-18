@@ -5,27 +5,23 @@ import java.util.List;
 
 public class Farm {
 
-    List<Animal> animals =  new ArrayList<>();
-
-    int slots = 10;
+    List<Animal> animals;
+    int slots;
 
     public void breed(){
-        Animal newAnimal = new Animal();
         if(slots > 0) {
-            animals.add(newAnimal);
+            animals.add(new Animal());
         }
     }
 
     public void slaughter(){
-
         int leastHungry = 0;
 
         for(int i = 0; i < animals.size(); i++){
-            if(animals.get(i).hunger < animals.get(leastHungry).hunger) {
-                leastHungry = i;
+            if(animals.get(i).hunger > leastHungry) {
+                leastHungry = animals.get(i).hunger;
             }
         }
-        animals.remove(animals.get(leastHungry));
-
+        animals.remove(leastHungry);
     }
 }

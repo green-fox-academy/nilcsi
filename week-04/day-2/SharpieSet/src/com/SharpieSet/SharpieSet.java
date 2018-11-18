@@ -9,6 +9,7 @@ public class SharpieSet {
     private List<Sharpie> sharpies;
 
     public SharpieSet (){
+
         this.sharpies = new ArrayList<>();
     }
 
@@ -17,18 +18,18 @@ public class SharpieSet {
     }
     public int countUsable() {
         int count = 0;
-        for (int i = 0; i < sharpies.size(); i++) {
-            if (sharpies.get(i).inkAmount > 0) {
+        for (Sharpie element : sharpies;) {
+            if (element.inkAmount > 0) {
                 count++;
             }
         }
         return count;
     }
+
     public void removeTrash() {
-        for (int i = 0; i < sharpies.size(); i++) {
-            if (sharpies.get(i).inkAmount == 0) {
-                sharpies.remove(i);
-                i--;
+        for (sharpies element : sharpies) {
+            if (element.inkAmount <= 0) {
+                sharpies.remove(element);
             }
         }
     }

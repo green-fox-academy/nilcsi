@@ -2,24 +2,27 @@ package com.Farm;
 
 public class Animal {
 
-    int hunger = 50;
-    int thirst = 50;
+    int hunger;
+    int thirst;
 
-    Animal() {}
-
-    public int eat(){
-
-        return hunger --;
+    Animal() {
+        this.hunger = 50;
+        this.thirst = 50;
     }
 
-    public int drink() {
+    public void eat(){
 
-        return thirst --;
+        this.hunger --;
+    }
+
+    public void drink() {
+
+        this.thirst --;
     }
 
     public void play(){
-        hunger ++;
-        thirst ++;
+        this.hunger ++;
+        this.thirst ++;
     }
 
 }
