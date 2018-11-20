@@ -10,7 +10,8 @@ public class Cohort {
 
   Cohort(String name) {
     this.name = name;
-
+    this.students = new ArrayList();
+    this.mentors = new ArrayList();
   }
 
   public void addStudent(Student student) {

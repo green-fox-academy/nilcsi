@@ -15,15 +15,16 @@ public class Sponsor extends Person {
     hiredStudents = 0;
   }
 
-  public String introduce() {
-    return (super.introduce() + " who represents " + company + " and hired " + hiredStudents + " students so far.");
+  public void introduce() {
+    super.introduce();
+    System.out.println(" who represents " + company + " and hired " + hiredStudents + " students so far.");
   }
 
   public void hire() {
     hiredStudents++;
   }
 
-  public String getGoal() {
-    return "Hire brilliant junior software developers.";
+  public void getGoal() {
+    System.out.println("Hire brilliant junior software developers.");
   }
 }

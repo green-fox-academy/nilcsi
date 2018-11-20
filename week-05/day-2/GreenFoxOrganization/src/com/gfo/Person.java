@@ -18,11 +18,11 @@ public class Person {
         gender = "female";
     }
 
-    public String introduce() {
-        return "Hi, I'm " + name + ", " + age + " year old " + gender + " .";
+    public void introduce() {
+        System.out.println("Hi, I'm " + name + ", " + age + " year old " + gender + " .");
     }
 
-    public String getGoal() {
-        return "My goal is: Live for the moment!";
+    public void getGoal() {
+        System.out.println("My goal is: Live for the moment!");
     }
 }

@@ -14,11 +14,12 @@ public class Mentor extends Person {
     level = "intermediate";
   }
 
-  public String getGoal() {
-    return "Educate brilliant junior software developers.";
+  public void getGoal() {
+    System.out.println("Educate brilliant junior software developers.");
   }
 
-  public String introduce() {
-    return (super.introduce() + ", " + level + " mentor.");
+  public void introduce() {
+    super.introduce();
+    System.out.println(", " + level + " mentor.");
   }
 }
