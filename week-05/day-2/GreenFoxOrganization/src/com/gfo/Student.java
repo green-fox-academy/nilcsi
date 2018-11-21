@@ -1,6 +1,6 @@
 package com.gfo;
 
-public class Student extends Person {
+public class Student extends Person implements Cloneable {
 
   String previousOrganization;
   int skippedDays;
@@ -30,4 +30,11 @@ public class Student extends Person {
 
     skippedDays += numberOfDays;
   }
+
+
+  public Student clone() {
+    Student student = new Student(name, age, gender, previousOrganization);
+    return student;
+  }
+
 }
