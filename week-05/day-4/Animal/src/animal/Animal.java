@@ -9,7 +9,7 @@ public class Animal {
 
     public int eat(){
 
-        return hunger --1;
+        return hunger --;
     }
 
     public int drink() {
