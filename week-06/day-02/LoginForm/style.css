@@ -1,0 +1,57 @@
+body {
+  background: #c0c0c0;
+  align-content: center;
+}
+
+h1 {
+  font-family: Century Gothic;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+form {
+  font-size: 12px;
+  max-width: 360px;
+  padding: 20px 50px 50px 20px;
+  margin: 150px auto;
+  z-index: 1;
+  position: relative;
+  background: white;
+  align-content: center;
+  text-transform: uppercase;
+  display: block;
+}
+
+input[type=submit] {
+    padding: 15px 40px;
+    margin: 0 25px 0;
+    background: #000;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 12px;
+}
+
+input[type="password"],
+ input[type=text] {
+  padding: 5px;
+  margin: 10px 20px;
+  z-index: 1;
+  position: relative;
+  width: 300px;
+}
+
+ input[type=text] {
+   border-color: 	#00FF00;
+   border-width: 1px;
+ }
+
+label {
+  padding: 10px;
+  margin: 20px;
+}
+
+p {
+  text-align: right;
+}
