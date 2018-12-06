@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  font-family: Century Gothic;
+  font-family: Arial;
   padding: 10px;
 }
 
@@ -17,6 +17,8 @@ form {
   background: white;
   align-content: center;
   display: block;
+  font-family: Arial;
+  box-shadow: 1px 2px 8px;
 }
 
 input[type=submit] {
@@ -31,14 +33,18 @@ input[type=submit] {
     text-transform: uppercase;
 }
 
+input[type="submit"]:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
 .or {
   background: #c0c0c0;
   border-radius: 100px;
-  margin: 100px;
   padding: 15px;
-  text-align: center;
+  margin-top: 80px;
   font-size: 22px;
-  display: inline;
 }
 
 input[type="password"],
@@ -48,13 +54,9 @@ input[type="password"],
   border-right-style: hidden;
   border-left-style: hidden;
   border-top-style: hidden;
-  margin: 10px 20px;
+  margin: 10px 10px 10px;
   position: relative;
   width: 200px;
-}
-
-input[type=submit]:focus, textarea:focus {
-  border-bottom-color: #000;
 }
 
 .facebook,
@@ -62,7 +64,7 @@ input[type=submit]:focus, textarea:focus {
 .google {
   width: 200px;
   color: #fff;
-  margin: 10 auto;
+  margin: 25px auto;
   padding: 10px;
   text-align: center;
   font-size: 16px;
@@ -100,4 +102,9 @@ a:hover {
 a:active {
   color: #C0C0C0;
   text-decoration: none;
+}
+
+div.box {
+  display: flex;
+  justify-content: space-between;
 }
