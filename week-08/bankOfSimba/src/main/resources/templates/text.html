@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel='stylesheet' href='/styles.css'>
     <title>Bank of Simba</title>
     <meta charset="utf-8" />
 </head>
 <body>
 
 <div>
-    <div th:each="text : ${string}">
-        <h1 th:utext="This is an <em>HTML</em> text. th:utext="<b>Enjoy yourself!</b>">/h1>
-    </div>
+    <p th:text="${text}"></p>
+    <p th:utext="${text}"></p>
 </div>
 
 </body>
