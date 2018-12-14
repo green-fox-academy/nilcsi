@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${fox.getName()}"></title>
+    <link rel="stylesheet" th:href="@{style.css}"/>
+</head>
+<body>
+<header>
+    <nav>
+        <a th:href="@{/(name=${fox.getName()})}">Information</a>
+        <a th:href="@{/login}">Login</a>
+        <a th:href="@{/nutritionstore/(name=${fox.getName()})}">Nutrition Store</a>
+        <a th:href="@{/trickcenter/(name=${fox.getName()})}">Trick Center</a>
+        <a th:href="@{/actionhistory/(name=${fox.getName()})}">Action History</a>
+    </nav>
+</header>
+<img th:src="greenfox.png" th:alt="${fox.getName()}"/>
+<p th:text="'This is ' +  ${fox.getName()} + '. Currently living on ' + ${fox.getFood()} + ' and ' + ${fox.getDrink()} + ' . He knows ' +  ${fox.getTricks().size()} + ' tricks.'"></p>
+<h1>Known tricks</h1>
+<p th:text="${fox.getTricks().isEmpty()}? ${fox.getName()} + ' doesn\'t know any tricks yet. Go learn some.'">
+</p>
+<ul th:each="trick : ${fox.getTricks()}" >
+    <li th:text="${trick}"></li>
+</ul>
+</body>
+</html>
