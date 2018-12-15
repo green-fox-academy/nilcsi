@@ -1,0 +1,40 @@
+<!DOCUMENT html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>My First Webshop</title>
+</head>
+<body>
+
+<form>
+    <p class="titlebar">My Shop</p>
+    <div>Only Available</div>
+    <div>Cheapest First </div>
+    <div>Contains Nike </div>
+    <div>Average Stock </div>
+    <div>Most Expensive Available</div>
+    <label>Search for: <input type="search" placeholder="...something like nike" />
+        <input type="button" value="Search" />
+    </label>
+    <table>
+        <thead>
+        <tr>
+            <td>Name</td>
+            <td>Description</td>
+            <td>Price</td>
+            <td>Quantity of stock</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="product : ${products}">
+            <td th:text="${product.getId()}"></td>
+            <td th:text="${product.getName()}"></td>
+            <td th:text="${product.qty}"></td>
+            <td th:text="${product.getPrice()}"></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
