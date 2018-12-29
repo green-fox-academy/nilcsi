@@ -23,7 +23,7 @@ public class LoginController {
 
   @GetMapping("/login")
   public String showLogin(Model model) {
-    model.addAttribute("fox", foxService.createFoxByName("deafult"));
+    model.addAttribute("fox", foxService.createFoxByName("default"));
     return "login";
   }
 
