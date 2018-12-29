@@ -11,16 +11,19 @@ public class Fox {
   public Fox(String name, List<String> tricks, String food, String drink) {
     this.name = name;
     this.tricks = tricks;
-    this.food = "salad";
-    this.drink = "water";
+    this.food = food;
+    this.drink = drink;
   }
 
   public Fox(String name) {
 
     this.name = name;
+    this.food = "salad";
+    this.drink = "water";
   }
 
   public Fox() {
+
   }
 
   public String getName() {
@@ -63,6 +66,9 @@ public class Fox {
     this.drink = drink;
   }
 
-  public void addTrick() {
+  public void addTrick(String trick) {
+    if(!tricks.contains(trick)) {
+      tricks.add(trick);
+    }
   }
 }

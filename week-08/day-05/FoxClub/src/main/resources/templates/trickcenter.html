@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Nutrition Store</title>
+    <title>Trick Center</title>
     <link rel="stylesheet" th:href="@{style.css}"/>
 </head>
 <body>
@@ -15,23 +15,16 @@
         <a th:href="@{/actionhistory/(name=${fox.getName()})}">Action History</a>
     </nav>
 </header>
-<form action="/nutritionstore" method="post">
+<form action="/trickcenter" method="post">
     <input type="hidden" name="name" th:value="${fox.getName()}">
-    <label for ="food">Food</label>
-    <select id="food" name="food">
-        <option value="pizza">Pizza</option>
-        <option value="hamburger">Hamburger</option>
-        <option value="nachos">Nachos</option>
-        <option value="gyros">Gyros</option>
+    <label for ="trick">Tricks</label>
+    <select id="trick" name="trick">
+        <option value="write HTML">write HTML</option>
+        <option value="code in Java">code in Java</option>
+        <option value="learn Python">learn Python</option>
+        <option value="Be Steve Jobs">Be Steve Jobs</option>
     </select>
-    <label for ="drink">Drink</label>
-    <select id="drink" name="drink">
-        <option value="coke">Coke</option>
-        <option value="juice">Juice</option>
-        <option value="water">Water</option>
-        <option value="shake">Shake</option>
-    </select>
-    <input type="submit" value="Change"/>
+    <input type="submit" value="Learn">
 </form>
 </body>
 </html>

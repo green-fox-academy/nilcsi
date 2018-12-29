@@ -22,13 +22,13 @@ public class FoxController {
   }
 
   @GetMapping("/nutritionstore")
-  public String nutrition(@RequestParam(required = false, value = "name") String foxName, Model model) {
-    model.addAttribute("fox", foxService.getFoxByName(foxName));
+  public String nutrition(@RequestParam(required = false, value = "name") String name, Model model) {
+    model.addAttribute("fox", foxService.getFoxByName(name));
     return "nutritionstore";
   }
 
   @PostMapping("/nutritionstore")
-  public String nutritionUpdate(@RequestParam(required = false, value = "foxName") String foxName,
+  public String nutritionUpdate(@RequestParam(required = false, value = "name") String foxName,
                                 @RequestParam(required = false, value = "food") String food,
                                 @RequestParam(required = false, value = "drink") String drink,
                                 Model model) {
