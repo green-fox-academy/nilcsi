@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Books</title>
-    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Bank of Simba</title>
 </head>
 <body>
+<table>
+    <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Balance</th>
+    <th>Type</th>
+    <th>King</th>
+    <th>Good or Bad</th>
+    </tr>
+    <tr th:each="account : ${accounts}">
+        <td th:text="${accountStat.count}"></td>
+        <td th:text="${account.getName()}"></td>
+        <td th:text="${#numbers.formatDecimal(account.getBalance(), 1, 2, 'POINT')} + ' Zebra '"></td>
+        <td th:text="${account.getAnimalType()}"></td>
+        <td th:text="${account.isKing()}"></td>
+        <td>
+            <span th:if="${account.isGood()}">Good guy</span>
+            <span th:unless="${account.isGood()}">Bad guy</span>
+        </td>
+    </tr>
+</table>
+<form th:action="@{/balance}" method="post">
+    <label>Account name: </label>
+    <input type="text" name="name">
+    <input type="submit" value="Add balance">
+</form>
 
-<div>
-    <div th:each="book : ${books}" >
-        <h1 th:text="${book.author} + ' - ' +${book.title} + ' (' + ${book.releaseYear} + ') '"></h1>
-    </div>
-</div>
+<h1>Add account</h1>
+<form th:action="@{/newaccount}" method="post">
+    <label>Account name: </label>
+    <input type="text" name="name">
 
+    <label>Balance:</label>
+    <input type="number" name="balance">
+
+    <label>Animal type:</label>
+    <input type="text" name="animalType">
+
+    <label>King or not?</label>
+    <input type="text" name="isKing">
+
+    <label>Good or bad:</label>
+    <input type="text" name="goodOrBad">
+    <input type="submit" value="Add account">
+</form>
 </body>
 </html>

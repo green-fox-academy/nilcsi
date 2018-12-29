@@ -1,0 +1,54 @@
+body {
+    background: #c0c0c0;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    align-content: center;
+}
+
+table {
+    border-style: hidden;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 600px;
+    font-family: Arial;
+    color: #696969;
+    padding: 15px;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px;
+}
+
+tr:nth-child(even) {background-color: #DCDCDC;}
+
+tr:nth-child(odd) {background-color: #ffffff;}
+
+h1 {
+    font-size: 22px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="number"]{
+    padding: 5px;
+    display: block;
+    margin: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    border-style: solid;
+    padding: 5px;
+    margin-left: 400px;
+}
+
+form {
+    margin: 10px 500px;
+    align-content: center;
+}
