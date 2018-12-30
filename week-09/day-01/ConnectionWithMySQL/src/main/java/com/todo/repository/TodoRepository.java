@@ -1,10 +1,14 @@
-package connectionwithmysql.connection.repository;
+package com.todo.repository;
 
-import connectionwithmysql.connection.model.Todo;
+import com.todo.model.Todo;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 public interface TodoRepository extends CrudRepository<Todo, Long> {
 
+  List<Todo> findAll();
+  List<Todo> findAllByDoneIsFalse();
 }
