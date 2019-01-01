@@ -1,22 +1,25 @@
 package com.todo.controller;
 
 import com.todo.model.Todo;
+import com.todo.service.AssigneeService;
 import com.todo.service.TodoService;
-import org.hibernate.annotations.GeneratorType;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.web.JsonPath;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
 
 @Controller
 public class TodoController {
 
   private TodoService todoService;
+  private AssigneeService assigneeService;
 
   @Autowired
-  public TodoController(TodoService todoService) {
+  public TodoController(TodoService todoService, AssigneeService assigneeService) {
     this.todoService = todoService;
+    this.assigneeService = assigneeService;
   }
 
 /*  @GetMapping("/")
@@ -55,6 +58,7 @@ public class TodoController {
   @GetMapping("/{id}/edit")
   public String editForm(@PathVariable long id, Model model) {
     model.addAttribute("todo", todoService.getTodoById(id));
+    model.addAttribute("assignees", assigneeService.listAssignees());
     return "edit";
   }
 
@@ -62,5 +66,17 @@ public class TodoController {
   public String editSubmit(@ModelAttribute Todo todo) {
     todoService.addTodo(todo);
     return "redirect:/";
+  }
+
+  @GetMapping("/search")
+  public String searchForName(Model model, @RequestParam("text") String text) {
+    model.addAttribute("todos", todoService.searchForString(text));
+    return "index";
+  }
+
+  @GetMapping("/searchDate")
+  public String searchForDueDate(Model model, @RequestParam("dueDate") Date date) {
+    model.addAttribute("dueDate", todoService.searchForDueDate(date));
+    return "index";
   }
 }

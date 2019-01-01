@@ -2,7 +2,6 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Edit todo</title>
@@ -11,12 +10,19 @@
     <form method="post" th:object="${todo}" th:action="@{/{id}/edit(id=${todo.id})}">
         <div class="m-5">
             <div align="center">
-                <label>Edit Todo</label>
+                <label class="h1">Edit Todo</label>
                 <p> Todo Description </p><input type="text" name="name" th:field="*{name}"></p>
                 <p>Urgent <input type="checkbox" th:field="*{urgent}"></p>
                 <p>Done <input type="checkbox" th:field="*{done}"></p>
+                <p>Assignee's name:
+                <select th:field="*{assignee}">
+                    <option th:each="assignee : ${assignees}" th:text="${assignee.name}" th:value="${assignee.id}"></option>
+                </select>
+                </p>
+                <p>Due Date: <input type="date" pattern="yyyy-MM-dd" th:field="*{dueDate}"></p>
                 <input type="submit" value="Submit" class="btn btn-success">
-                <a href="" class="btn btn-danger">Cancel</a>
+                <a href="/list" class="btn btn-danger">Cancel</a>
+                <a href="" class="btn btn-warning">Reset</a>
             </div>
         </div>
     </form>

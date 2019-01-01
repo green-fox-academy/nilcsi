@@ -1,10 +1,12 @@
 package com.todo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
+@Table(name = "todos")
 public class Todo {
 
   @Id
@@ -14,6 +16,17 @@ public class Todo {
   private String name;
   private boolean urgent;
   private boolean done;
+
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
+  private Date dueDate;
+
+  @Temporal(TemporalType.TIMESTAMP)
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
+  private Date createdAt;
+
+  @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+  @JoinColumn(name = "assignee_id")
+  private Assignee assignee;
 
   public Todo(String name, boolean isUrgent, boolean isDone) {
     this.name = name;
@@ -61,5 +74,29 @@ public class Todo {
 
   public void setDone(boolean done) {
     this.done = done;
+  }
+
+  public Assignee getAssignee() {
+    return assignee;
+  }
+
+  public void setAssignee(Assignee assignee) {
+    this.assignee = assignee;
+  }
+
+  public Date getDueDate() {
+    return dueDate;
+  }
+
+  public void setDueDate(Date dueDate) {
+    this.dueDate = dueDate;
+  }
+
+  public Date getCreatedAt() {
+    return createdAt;
+  }
+
+  public void setCreatedAt(Date createdAt) {
+    this.createdAt = createdAt;
   }
 }

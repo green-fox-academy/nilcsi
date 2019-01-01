@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class TodoServiceImpl implements TodoService {
 
-  TodoRepository todoRepository;
+  private TodoRepository todoRepository;
 
   @Autowired
   public TodoServiceImpl(TodoRepository todoRepository) {
@@ -45,4 +45,16 @@ public class TodoServiceImpl implements TodoService {
   public List<Todo> getActiveTodos() {
     return this.todoRepository.findAllByDoneIsFalse();
   }
+
+  @Override
+  public List<Todo> searchForString(String text) {
+    return todoRepository.findAllByName(text);
+  }
+
+  @Override
+  public List<Todo> searchForDueDate(Date date) {
+    return todoRepository.findAllByDueDate(date);
+  }
+
+
 }
