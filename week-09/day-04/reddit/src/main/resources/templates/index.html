@@ -2,38 +2,26 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet"/>
     <title>Reddit</title>
 </head>
 <body>
-<h3>
-    <a href="submit">Submit new post</a>
-</h3>
-
-<h1 style="text-align: center">
-    Trending posts
-</h1>
+<a th:href="@{/addpost}">Submit new post</a>
+<h1>Trending posts</h1>
 <table class="table">
-    <form>
-        <tr th:each="post : ${postList}">
-            <td th:text="${post.count}"></td>
-            <td>
-                <a th:href="@{'/countInc/' + ${post.id}}">+</a>
-            </td>
-            <td>
-                <a th:href="@{'/countDec/' + ${post.id}}">-</a>
-            </td>
-            <td >
-                <a th:href="${post.url}" th:text="${post.title}"></a>
-            </td>
+    <tbody>
+        <tr th:each="post : ${posts}" th:object="${post}">
+            <td th:text="*{postDate}"></td>
+            <td><a th:href="@{/{id}/increase(id=*{id})}">+</a></td>
+            <td th:text="*{vote}"></td>
+            <td><a th:href="@{/{id}/decrease(id=*{id})}">-</a></td>
+            <td><a th:href="@{/{id}/showpost(id=*{id})}"><span th:text="*{title}"></span></a></td>
+            <td><a th:href="@{/{id}/edit(id=*{id})}">edit</a></td>
+            <td><a th:href="@{/{id}/delete(id=*{id})}">delete</a></td>
         </tr>
-    </form>
+    </tbody>
 </table>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+<script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+<script src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
 </body>
 </html>

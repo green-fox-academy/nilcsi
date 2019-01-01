@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet"/>
+    <title>Edit post</title>
+</head>
+<body>
+<h1>Edit post</h1>
+<form method="post" th:action="@{/{id}/edit(id=${post.id})}" th:object="${post}">
+    <label>Title:</label>
+    <input type="text" name="title" th:field="*{title}" required>
+    <p>
+    <label>URL:</label>
+    <input type="url" name="url" th:field="*{url}">
+    </p>
+    <input type="submit" value="Edit post" class="btn btn-info">
+    <a href="/" class="btn btn-danger">Cancel</a>
+</form>
+<script src="/webjars/jquery/1.11.1/jquery.min.js"></script>
+<script src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+</body>
+</html>
