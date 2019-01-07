@@ -2,7 +2,7 @@ package com.restapp.error;
 
 public class ErrorMessage {
 
-  String error;
+  private String error;
 
   public ErrorMessage(String error) {
     this.error = error;

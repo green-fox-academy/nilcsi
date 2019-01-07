@@ -2,11 +2,18 @@ package com.restapp.model;
 
 public class Greeter {
 
-  String name;
-  String title;
+  private String name;
+  private String title;
+  String welcome
 
   public Greeter(){
 
+  }
+
+  public Greeter(String name, String title) {
+    String welcome = "welcome message:";
+    this.name = name;
+    this.title = title;
   }
 
   public String getName() {

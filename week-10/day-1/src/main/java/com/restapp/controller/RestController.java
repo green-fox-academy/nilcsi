@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class RestController {
 
   @GetMapping("/doubling")
-  public Object doubling(@RequestParam Integer input) {
+  public Object doubling(@RequestParam(value = "input", required = false) Integer input) {
     if(input != null) {
       return new Doubled(input);
     } else {
@@ -18,5 +18,8 @@ public class RestController {
     }
   }
 
-  //@GetMapping("/greeter")
+  @GetMapping("/greeter")
+  public Object greeter(@RequestParam("name") String name, @RequestParam("title") String title) {
+
+  }
 }
