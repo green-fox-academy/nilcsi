@@ -1,6 +1,7 @@
 package foxclub.foxclub.service;
 
 import foxclub.foxclub.model.Fox;
+import foxclub.foxclub.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
