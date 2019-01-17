@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>Add measure</title>
+</head>
+<body>
+<form method="post" action="/measure" th:object="${weather}">
+    <label id="location">Location:</label>
+    <input name="location" type="text" th:field="*{location}">
+    <label id="temperature">Temperature:</label>
+    <input name="temperature" type="text" th:field="*{temperature}">
+    <label id="airPressure">Air pressure:</label>
+    <input name="airPresssure" type="text" th:field="*{airPressure}">
+    <label id="humidity">Humidity:</label>
+    <input name="humidity" type="text" th:field="*{humidity}">
+    <label id="date">Date:</label>
+    <input name="date" type="date" th:field="*{date}">
+    <input type="submit" value="Save">
+</form>
+</body>
+</html>

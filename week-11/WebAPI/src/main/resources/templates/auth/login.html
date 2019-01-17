@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<div fragment="loginContent">
+
+    <form name="login" th:action="@{/login}" method="post" class="form-signin">
+        <h2 class="form-signin-heading">Please, log in</h2>
+        <div id="err" th:if="${param.error}" class="alert alert-danger">Incorrect username or password</div>
+        <div th:if="${param.logout}" class="alert alert-success">You've logged out successfully</div>
+        <label for="username" class="sr-only">Username</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Felhasználói név" required="true" />
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Jelszó" required="true" />
+        <div class="checkbox">
+            <label> <input id="remember-me" name="remember-me" type="checkbox" /> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    </form>
+
+</div>
+
+</body>
+</html>

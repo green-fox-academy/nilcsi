@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>List all measure</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Location</th>
+        <th>Temperature</th>
+        <th>Air pressure</th>
+        <th>Humidity</th>
+        <th>Date</th>
+    </tr>
+    <tr th:each="weather : ${weather}">
+        <td th:text="${weather.id}"></td>
+        <td th:text="${weather.location}"></td>
+        <td th:text="${weather.temperature}"></td>
+        <td th:text="${weather.airPressure}"></td>
+        <td th:text="${weather.humidity}"></td>
+        <td th:text="${weather.date}"></td>
+    </tr>
+</table>
+</body>
+</html>
