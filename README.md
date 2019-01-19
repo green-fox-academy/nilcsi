@@ -1,5 +1,5 @@
 # nilcsi
-Green Fox Academy Ruepellii cohort - Tiptop Java (10/2018 - 03/2019)
+Green Fox Academy Rueppellii cohort - Tiptop Java (10/2018 - 03/2019)
 
 <h2>💻 Week-1 (24th Oct. - 26th Oct.) HTML and CSS</h2>
 <ul>
@@ -62,8 +62,7 @@ Green Fox Academy Ruepellii cohort - Tiptop Java (10/2018 - 03/2019)
 <li>Day 31 - Monday: Training / DOJO</li>
 <li>Day 32 - <a href="https://github.com/green-fox-academy/nilcsi/tree/master/week-08/day-02">Tuesday: SQL</a></li>
 <li>Day 34 - <a href="https://github.com/green-fox-academy/nilcsi/tree/master/week-08/day-03">Wednesday: Thymeleaf, Models, Views</a></li>
-<li>Day 34 - <a href="https://github.com/green-fox-academy/nilcsi/tree/master/week-08/day-03">Wednesday: Thymeleaf, Models, Views</a></li>
-<li>Day 35 - <a href="https://github.com/green-fox-academy/nilcsi/tree/master/week-08/day-04">Thursday: Dependencies</a></p>
+<li>Day 35 - <a href="https://github.com/green-fox-academy/nilcsi/tree/master/week-08/day-04">Thursday: Dependencies</a></li>
 <li>Day 36 - <a href="https://github.com/green-fox-academy/nilcsi/tree/master/week-08/day-05/FoxClub">Friday: Programmer Fox Club</a></li>
 </ul>
 
@@ -83,7 +82,7 @@ Green Fox Academy Ruepellii cohort - Tiptop Java (10/2018 - 03/2019)
 <li>Day 46 - Friday: Orientation exam 🔥</li>
   </ul>
 
-<h2>💻 Week-11 (14h Jan. - 18th Jan.) Project week 0th</h2>
+<h2>💻 Week-11 (14h Jan. - 18th Jan.) Project phase, week 0th</h2>
 <ul>
 <li>Day 47-51 - <a href="https://github.com/green-fox-academy/nilcsi/tree/master/week-11/WebAPI">Monday-Friday: WebAPI</a></li>
   </ul>
